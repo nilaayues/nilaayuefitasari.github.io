@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #000000;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #800000;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Belajar HTML</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Indonesia</a></li>
+      <li><a href="#">Beragam</a></li>
+      <li><a href="#">Budaya</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>INDONESIA</h1>
+    <p>Indonesia is the largest archipelagic country in the world. Indonesia has more than 17,000 islands, of which only about 7,000 are inhabited. ... The capital city of Indonesia is Jakarta, which is located on the island of Java.</p>
+    <p>There are several forms of diversity in Indonesia, ranging from ethnic diversity, religious diversity, racial diversity, and also the diversity of group members.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
+</html>
